@@ -32,7 +32,7 @@ const Footer = () => {
                Main Dhaka  <br />
                Rangpur (Sub)  <br />
                Sylet (Sub)  <br />
-               Commila (Sub)     
+               Commila (Sub)    
              </Typography>    
             </Grid>
 
