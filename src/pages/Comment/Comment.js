@@ -4,7 +4,7 @@ import React from 'react';
 
 const Comment = () => {
     return (
-       <Container sx={{backgroundColor:'#0D2926',my:8}}>
+       <Container id="comment" sx={{backgroundColor:'#0D2926',my:8}}>
            <Typography variant='h4' sx={{color:'white',pt:4}}>
                Your Comment
            </Typography>
