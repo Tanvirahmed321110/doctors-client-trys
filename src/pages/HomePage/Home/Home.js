@@ -6,7 +6,6 @@ import Header from "../../Shared/Header/Header";
 import AppointmentBanner from "../AppointmentBanner/AppointmentBanner";
 import Services from "../Services/Services";
 
-
 const Home = () => {
   return (
     <div>
