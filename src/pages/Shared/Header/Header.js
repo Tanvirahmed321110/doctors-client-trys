@@ -60,11 +60,22 @@ const Header = () => {
           </Link>
 
 
-            <NavLink   as={HashLink} to="/#comment">
-            <Button sx={{ color: "white", fontSize: "15px"}}>
+            {/* <Link to="/#comment">
+            <Button 
+            sx={{ color: "white", fontSize: "15px"}}
+            onClick={()=>window.location.replace("/#comment")}
+            >
               Comment
             </Button>
-            </NavLink> 
+            </Link>  */}
+    
+    <HashLink smooth to="#comment"> <Button 
+            sx={{ color: "white", fontSize: "15px"}}
+            onClick={()=>window.location.replace("/#comment")}
+            >
+              Comment
+            </Button></HashLink>
+
 
           <NavLink to="/login">
             <Button sx={{ fontSize: "15px",color:'white',textDecoration:'none' }} color="inherit">

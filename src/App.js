@@ -8,11 +8,13 @@ import Login from './pages/Login/Login/Login';
 import NotFound from './pages/Shared/NotFound/NotFound';
 import Comment from './pages/Comment/Comment';
 import Register from './pages/Login/Register/Register';
+import AuthProvider from './context/AuthProvider/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+     <AuthProvider>
+     <BrowserRouter>
         <Switch>
           <Route exact path="/">
             <Home></Home>
@@ -29,14 +31,12 @@ function App() {
           <Route path="/register">
            <Register />
           </Route>
-          <Route path="/comment#comment">
-            <Comment></Comment>
-          </Route>
           <Route path="">
             <NotFound></NotFound>
           </Route>
         </Switch>
       </BrowserRouter>
+     </AuthProvider>
     </div>
   );
 }
